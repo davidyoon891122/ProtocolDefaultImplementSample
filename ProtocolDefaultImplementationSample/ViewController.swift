@@ -22,6 +22,17 @@ class ViewController: UIViewController {
         return button
     }()
     
+    private lazy var stackButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Stack", for: .normal)
+        button.setTitleColor(.label, for: .normal)
+        
+        button.addTarget(self, action: #selector(didTapStackButton), for: .touchUpInside)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -32,7 +43,8 @@ private extension ViewController {
     func setupViews() {
         view.backgroundColor = .systemBackground
         [
-            talkButton
+            talkButton,
+            stackButton
         ]
             .forEach {
                 view.addSubview($0)
@@ -43,6 +55,11 @@ private extension ViewController {
             talkButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             talkButton.heightAnchor.constraint(equalToConstant: 50.0),
             talkButton.widthAnchor.constraint(equalToConstant: 70.0)
+        ])
+        
+        NSLayoutConstraint.activate([
+            stackButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            stackButton.leadingAnchor.constraint(equalTo: view.leadingAnchor)
         ])
     }
     
@@ -55,6 +72,21 @@ private extension ViewController {
         
         kim.getLanguage()
         tom.getLanguage()
+    }
+    
+    @objc
+    func didTapStackButton() {
+        print("Stack")
+        
+        var intStack = Stack<Int>(items: [1, 2, 3])
+        intStack.add(item: 4)
+        print("int Stack : \(intStack.items)")
+        
+        var strStack = Stack<String>(items: ["a", "b" , "c" ])
+        strStack.add(item: "d")
+        
+        print("str Stack: \(strStack.items)")
+        
     }
 }
 

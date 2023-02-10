@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497B93A22995A8A600B41E4C /* Stackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B93A12995A8A600B41E4C /* Stackable.swift */; };
 		49A371AA29945E2200B28B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A371A929945E2200B28B73 /* AppDelegate.swift */; };
 		49A371AC29945E2200B28B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A371AB29945E2200B28B73 /* SceneDelegate.swift */; };
 		49A371AE29945E2200B28B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A371AD29945E2200B28B73 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		497B93A12995A8A600B41E4C /* Stackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stackable.swift; sourceTree = "<group>"; };
 		49A371A629945E2200B28B73 /* ProtocolDefaultImplementationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolDefaultImplementationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A371A929945E2200B28B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A371AB29945E2200B28B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				49A371B429945E2400B28B73 /* LaunchScreen.storyboard */,
 				49A371B729945E2400B28B73 /* Info.plist */,
 				49A371BD29945FD700B28B73 /* TalkBox.swift */,
+				497B93A12995A8A600B41E4C /* Stackable.swift */,
 			);
 			path = ProtocolDefaultImplementationSample;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				49A371AE29945E2200B28B73 /* ViewController.swift in Sources */,
 				49A371BE29945FD700B28B73 /* TalkBox.swift in Sources */,
 				49A371AA29945E2200B28B73 /* AppDelegate.swift in Sources */,
+				497B93A22995A8A600B41E4C /* Stackable.swift in Sources */,
 				49A371AC29945E2200B28B73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
